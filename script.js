@@ -2,7 +2,7 @@ var weatherUrl = "";
 
 function foo(state){
   var selectedValue = state.value;
-  weatherUrl = "https://api.openweathermap.org/data/2.5/weather?q="+selectedValue+"&appid=123c610b9dc7177312e5ab4c1abf7429&units=metric";
+  weatherUrl = "https://api.openweathermap.org/data/2.5/weather?q="+selectedValue+"&appid={add-your-key-here}&units=metric";
   makeRequest(weatherUrl);
   
     

@@ -10,9 +10,10 @@
 </head>
 <body>
     <script src="script.js"></script>
+    <script src="https://rawgit.com/darkskyapp/skycons/master/skycons.js"></script>
     <div class="container">
         <div class="weather-box"> 
-            <select name="state" onchange=foo(this) id="state" class="form-control">
+            <select name="state" onchange=setstate(this) id="state" class="form-control">
                 <option value="Andhra Pradesh">Andhra Pradesh</option>
                 <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
                 <option value="Arunachal Pradesh">Arunachal Pradesh</option>
@@ -52,8 +53,8 @@
                 </select>
             <br><br> <br><br>
             <div class="row1">
-                <h2 class="weather-location" id="loc"></h2>                
-                <img id="img" src="" width="100" height="70" style="display:none">
+                <h2 class="weather-location" id="loc"></h2>
+                <canvas id="icon1" width="150" height="75"></canvas>
                 <h3 class="weather-location" id="type"></h3>           
             </div>
             <div class="row2">
@@ -64,7 +65,11 @@
                 <h2 id ="wdesc" class="feels-like"></h2>
                 <h2 id="hum" class="humidity"></h2>                
             </div>
-            <p class="made-by">Made by Aditya Bhargav with Open Weather API.</p>
+            <div>
+                <h2 id="wind" class="wind"></h2>
+                <canvas id="icon2" width="150" height="75"></canvas>
+            </div>
+            <p class="made-by">Made by Aditya Bhargav with Open Weather Map API.</p>
         </div>
     </div>
 </body>

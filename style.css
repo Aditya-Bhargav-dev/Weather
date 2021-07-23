@@ -47,7 +47,6 @@ body
     font-size: 50px;
     
 }
-
 .row2{
     display: flex;
     justify-content: center;
@@ -106,7 +105,11 @@ body
     padding: 10px;
     font-size: 18px;
 }
-
+.wind
+{
+    color: white;
+    font-size: 20px;
+}
 select {
     background: whitesmoke;
     width: 150px;
